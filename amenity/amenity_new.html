@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="amenity.css">
+
+    <title>Add New Amenity</title>
+  </head>
+  <body>
+    <main class="GuidePage">
+      <div class="m-5">
+        <div class="container col-8 col-md-offset-2">
+          <div class="row container-fluid mb-5 pt-3">
+            <h1>Add new amenity</h1>
+          </div>
+
+          <div class="row">
+            <div class="col col-sm-12 col-md-8 col-md-">
+              <form class="form-group" action="../guide/category.html" method="post">
+                <div class="form-group">
+                  <label for="category-selection">Select amenity category</label>
+                  <select name="category-selection" class="custom-select">
+                    <option value="kitchen" selected>Kitchen</option>
+                    <option value="bathroom">Bathroom</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="amenity-name">Amenity Name</label>
+                  <input type="text" name="amenity-name" class="form-control" placeholder="Coffee">
+                </div>
+
+                <div class="form-group">
+                  <label for="amenity-desc">Amenity Description</label>
+                  <textarea type="textarea" name="amenity-desc" class="form-control" placeholder="We can offer pour-over set as well as a French press. The coffee grounds are in the cupboard." rows="6"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary mt-2 float-right">Create Amenity</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
